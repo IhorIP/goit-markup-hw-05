@@ -630,5 +630,90 @@
       </div>
     </footer>
     <!-- #endregion footer -->
+
+    <!-- #region popup -->
+    <div class="backdrop">
+      <div class="popup-review">
+        <button class="close-popup" type="button">
+          <svg class="close-popup-icon" width="24" height="24">
+            <use href="./images/icons.svg#icon-ButtonClose"></use>
+          </svg>
+        </button>
+        <p class="popup-title">Leave your contacts and we will call you back</p>
+
+        <form action="">
+
+          <div class="input-wrapper">
+            <label for="form-name" class="form-label">Name</label>
+            <input type="text" class="input-text" id="form-name" name="name" >
+          </div>
+
+          <div class="input-wrapper">
+            <label for="form-phone" class="form-label">Phone</label>
+            <input type="text" class="input-text" id="form-phone" name="phone" >
+          </div>
+
+          <div class="input-wrapper">
+            <label for="form-email" class="form-label">Email</label>
+            <input type="email" class="input-text" id="form-email" name="email" >
+          </div>
+
+          <div class="input-wrapper">
+            <label for="form-comment" class="form-label">Comment</label>
+            <textarea class="input-text" id="form-comment" name="comment" placeholder="Text input"></textarea>
+          </div>
+
+          <div>
+            <input type="checkbox" id="form-checkbox" name="form-checkbox" value="true">
+            <label for="form-checkbox">I accept the terms and conditions of the <a href="" class="text-iris accent">Privacy Policy</a></label>
+          </div>
+
+          <button type="submit" class="submit-button">Send</button>
+
+        </form>
+      </div>
+    </div>
+
+      <!-- <div class="popup-content">
+    <button type="button" class="popup-close" aria-label="Close popup">
+      <svg class="popup-close-icon" width="16" height="16">
+        <use href="./images/icons.svg#icon-close"></use>
+      </svg>
+    </button>
+    <h2 class="popup-title">Order Service</h2>
+    <form class="popup-form" action="#" method="post">
+      <label for="name" class="popup-label">Name</label>
+      <input
+        type="text"
+        id="name"
+        name="name"
+        class="popup-input"
+        placeholder="Enter your name"
+        required
+      />
+
+      <label for="email" class="popup-label">Email</label>
+      <input
+        type="email"
+        id="email"
+        name="email"
+        class="popup-input"
+        placeholder="Enter your email"
+        required
+      />
+
+      <label for="service" class="popup-label">Select Service</label>
+      <select id="service" name="service" class="popup-select" required>
+        <option value="" disabled selected>Select a service</option>
+        <option value="strategy">Strategy</option>
+        <option value="punctuality">Punctuality</option>
+        <option value="diligence">Diligence</option>
+        <option value="technologies">Technologies</option>
+      </select>
+
+      <button type="submit" class="popup-submit">Submit</button>
+    </form> -->
+    </div>
+    <!-- #endregion popup -->
   </body>
 </html>
