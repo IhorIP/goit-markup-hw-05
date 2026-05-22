@@ -224,8 +224,6 @@ img {
   cursor: pointer;
   border-radius: 4px;
   padding: 16px 32px;
-  /* width: 169px;
-    height: 56px; */
   display: block;
   margin: 0 auto;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
@@ -573,21 +571,28 @@ img {
   height: 80%;
   max-height: 584px;
   background-color: #fcfcfc;
+  box-shadow:
+    0 1px 1px 0 rgba(0, 0, 0, 0.14),
+    0 1px 3px 0 rgba(0, 0, 0, 0.12),
+    0 2px 1px 0 rgba(0, 0, 0, 0.2);
   overflow: auto;
 }
 
 .close-popup {
   position: absolute;
-  stroke: #2e2f42;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   top: 24px;
   right: 24px;
   padding: 0;
+  width: 24px;
+  height: 24px;
   cursor: pointer;
-  border: none;
+  border: 1px solid rgba(0, 0, 0, 0.1);
   background-color: #e7e9fc;
-  stroke-width: 1px;
-  stroke: rgba(0, 0, 0, 0.1);
   border-radius: 100%;
+  transition: border 250ms ease;
 }
 
 .close-popup:hover,
@@ -595,7 +600,8 @@ img {
 .close-popup-icon:hover,
 .close-popup-icon:focus {
   fill: #ffffff;
-  background-color: #4d5ae5;
+  background-color: #404bbf;
+  border: #404bbf;
 }
 
 .popup-title {
@@ -621,7 +627,65 @@ img {
   margin-bottom: 4px;
 }
 
+.input-text {
+  width: 100%;
+  border-radius: 4px;
+  height: 40px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  background-color: transparent;
+  padding-left: 38px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  transition: border 250ms ease;
+}
+
+.input-textarea {
+  border-radius: 4px;
+  padding: 8px 16px;
+  width: 100%;
+  height: 120px;
+
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 117%;
+  letter-spacing: 0.04em;
+  color: rgb(46, 47, 66, 0.4);
+  resize: none;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  transition: border 250ms ease;
+  background-color: transparent;
+}
+
+.input-text:hover,
+.input-text:focus,
+.input-textarea:hover,
+.input-textarea:focus {
+  outline: none;
+  border: 1px solid #4d5ae5;
+}
+
 .accent {
   text-decoration: underline;
+}
+
+.submit-button {
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  padding: 16px 32px;
+  min-width: 169px;
+  background-color: #4d5ae5;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  color: #ffffff;
+  display: block;
+  margin: 0 auto;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.04em;
+  text-align: center;
 }
 /* #endregion popup */
