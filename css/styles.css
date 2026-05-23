@@ -641,6 +641,18 @@ img {
   transition: border 250ms ease;
 }
 
+.form-icon {
+  position: absolute;
+  top: 50%;
+  left: 16px;
+  transform: translateY(-50%);
+  transition: fill 250ms ease;
+}
+
+.input-svg-wrapper {
+  position: relative;
+}
+
 .input-textarea {
   border-radius: 4px;
   padding: 8px 16px;
@@ -649,13 +661,21 @@ img {
 
   font-weight: 400;
   font-size: 12px;
-  line-height: 117%;
+  line-height: 1.17;
   letter-spacing: 0.04em;
   color: rgb(46, 47, 66, 0.4);
   resize: none;
   border: 1px solid rgba(46, 47, 66, 0.4);
   transition: border 250ms ease;
   background-color: transparent;
+}
+
+.input-textarea::placeholder {
+  color: rgb(46, 47, 66, 0.4);
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
 }
 
 .input-text:hover,
@@ -666,26 +686,73 @@ img {
   border: 1px solid #4d5ae5;
 }
 
+.input-text:focus + .form-icon {
+  fill: #4d5ae5;
+}
+
+.checkbox-wrapper {
+  margin-top: 8px;
+  margin-bottom: 24px;
+}
+
+.native-checkbox:checked + .checkbox-label > .custom-checkbox {
+  border-radius: 2px;
+  background-color: #404bbf;
+  border: 1px solid #404bbf;
+  fill: #f4f4fd;
+}
+
+.checkbox-label {
+  display: block;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: #8e8f99;
+}
+
+.custom-checkbox {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 8px;
+  height: 16px;
+  width: 16px;
+  border-radius: 2px;
+  border: 1px solid rgb(46, 47, 66, 0.4);
+  fill: transparent;
+  transition:
+    background-color 250ms ease,
+    border 250ms ease;
+}
+
 .accent {
+  line-height: 1.33;
   text-decoration: underline;
+  text-decoration-skip-ink: none;
 }
 
 .submit-button {
   cursor: pointer;
   border: none;
   border-radius: 4px;
-  padding: 16px 32px;
+  padding: 16px 65px;
   min-width: 169px;
   background-color: #4d5ae5;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   color: #ffffff;
   display: block;
   margin: 0 auto;
-
   font-weight: 500;
   font-size: 16px;
-  line-height: 150%;
+  line-height: 1.5;
   letter-spacing: 0.04em;
   text-align: center;
+  transition: background-color 250ms ease;
+}
+
+.submit-button:hover,
+.submit-button:focus {
+  background-color: #404bbf;
 }
 /* #endregion popup */
