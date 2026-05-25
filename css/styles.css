@@ -236,7 +236,7 @@ img {
 
 /* #endregion hero */
 
-/* #region Pillars */
+/* #region features */
 
 .section-pillars {
     padding: 120px 0;
@@ -282,9 +282,9 @@ img {
     letter-spacing: 0.02em;
 }
 
-/* #endregion Pillars */
+/* #endregion features */
 
-/* #region Our Team */
+/* #region team */
 
 .section-team {
     background-color: #f4f4fd;
@@ -370,9 +370,9 @@ img {
     fill: #f4f4fd;
 }
 
-/* #endregion Our Team */
+/* #endregion team */
 
-/* #region Portfolio */
+/* #region portfolio */
 
 .section-portfolio {
     padding: 120px 0;
@@ -459,7 +459,7 @@ img {
     letter-spacing: 0.02em;
 }
 
-/* #endregion Portfolio */
+/* #endregion portfolio */
 
 /* #region footer */
 
@@ -588,6 +588,7 @@ img {
     align-items: center;
     cursor: pointer;
     border: none;
+    gap: 16px;
     border-radius: 4px;
     padding: 8px 24px;
     background-color: #4D5AE5;

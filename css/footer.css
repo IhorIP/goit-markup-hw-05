@@ -6,11 +6,12 @@
 .footer-container {
     display: flex;
     align-items: baseline;
-    gap: 120px;
+    /* gap: 120px; */
 }
 
 .footer-information {
-    width: 264px;
+    max-width: 264px;
+    margin-right: 120px;
 }
 
 .footer-logo {
@@ -31,11 +32,11 @@
     color: #f4f4fd;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    max-width: 264px;
 }
 
 .footer-social {
     width: 208px;
+    margin-right: 83px;
 }
 
 .footer-social-description {
@@ -122,6 +123,7 @@
     align-items: center;
     cursor: pointer;
     border: none;
+    gap: 16px;
     border-radius: 4px;
     padding: 8px 24px;
     background-color: #4D5AE5;
