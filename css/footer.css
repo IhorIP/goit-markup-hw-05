@@ -106,15 +106,21 @@
     height: 40px;
     font-weight: 400;
     font-size: 12px;
-    line-height: 1.17;
+    line-height: 1.2;
     letter-spacing: 0.04em;
     color: #FFFFFF;
     margin-right: 24px;
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    background-color: transparent;
 }
 
 .footer-input-text:focus {
     border: 1px solid #31D0AA;
     outline: none;
+}
+
+.footer-input-text::placeholder {
+    color: #FFFFFF
 }
 
 .footer-form-button {
