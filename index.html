@@ -17,7 +17,7 @@
 
 <body>
   <!-- #region header -->
-  <header class="page-header">
+  <header id="header" class="page-header">
     <div class="container header-container">
       <nav class="page-nav">
         <a href="./index.html" class="main-logo"><span class="text-iris">Web</span>Studio</a>
@@ -26,7 +26,7 @@
             <a href="" class="nav-link active">Studio</a>
           </li>
           <li class="nav-list-item">
-            <a href="" class="nav-link">Portfolio</a>
+            <a href="#portfolio" class="nav-link">Portfolio</a>
           </li>
           <li class="nav-list-item">
             <a href="" class="nav-link">Contacts</a>
@@ -49,7 +49,7 @@
 
   <main>
     <!-- #region hero -->
-    <section class="section-hero">
+    <section id="hero" class="section-hero">
       <div class="container">
         <h1 class="title-hero">Effective Solutions for Your Business</h1>
         <button type="button" class="button-hero">Order Service</button>
@@ -58,9 +58,9 @@
     <!-- #endregion hero -->
 
     <!-- #region features -->
-    <section class="section-pillars">
+    <section id="features" class="section-pillars">
       <div class="container">
-        <h2 class="title-pillars visually-hidden">Pillars</h2>
+        <h2 class="title-pillars sr-only">Pillars</h2>
         <ul class="pillars-list">
           <li class="pillars-item">
             <div class="pillars-wrapper">
@@ -116,7 +116,7 @@
     <!-- #endregion features -->
 
     <!-- #region team -->
-    <section class="section-team">
+    <section id="team" class="section-team">
       <div class="container">
         <h2 class="team-title">Our Team</h2>
         <ul class="team-list">
@@ -301,7 +301,7 @@
     <!-- #endregion team -->
 
     <!-- #region portfolio -->
-    <section class="section-portfolio">
+    <section id="portfolio" class="section-portfolio">
       <div class="container">
         <h2 class="portfolio-title">Our Portfolio</h2>
         <ul class="portfolio-list">
@@ -413,7 +413,7 @@
     <!-- #endregion portfolio -->
   </main>
   <!-- #region footer -->
-  <footer class="page-footer">
+  <footer id="footer" class="page-footer">
     <div class="container">
       <div class="footer-container">
         <div class="footer-information">
@@ -483,7 +483,7 @@
 
   <!-- #region modal -->
 
-  <div class="backdrop">
+  <div id="modal" class="backdrop">
     <div class="modal">
       <button class="close-popup" type="button">
         <svg class="close-popup-icon" width="8" height="8">
@@ -524,8 +524,7 @@
           <textarea class="input-textarea" id="form-comment" name="comment" placeholder="Text input"></textarea>
         </div>
         <div class="checkbox-wrapper">
-          <input type="checkbox" id="form-checkbox" name="form-checkbox" value="true"
-            class="native-checkbox visually-hidden">
+          <input type="checkbox" id="form-checkbox" name="form-checkbox" value="true" class="native-checkbox sr-only">
           <label for="form-checkbox" class="checkbox-label">
             <span class="custom-checkbox">
               <svg width="10" height="8" class="checkbox-icon">
